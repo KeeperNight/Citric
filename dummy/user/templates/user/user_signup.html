@@ -1,5 +1,6 @@
 {% extends "user/base.html" %}
 {% load static %}
+{% load crispy_forms_tags %}
 {% block content %}
     <div class = "col-md-4">
         <br><br>
@@ -7,20 +8,20 @@
     <br><br><br>
     </div>
     <div class = "col-md-8">
-        {% csrf_token %}
-            <form action="" method="post">
-                    <h1 class = "title_signup">Register</h1>
-                    <label for="signup_username" class="user">Username</label>
-                    <input type="text" name="signup_username" id="" placeholder="@Username" class = "user1"><br>
-                    <label for="signup_firstname" class="fname">First Name</label>
-                    <input type="text" name="signup_firstname" id="" class = "fname1"><br>
-                    <label for="signup_lastname" class= "fname">Last Name</label>
-                    <input type="text" name="signup_lastname" id="" class = "fname1"><br>
-                    <label for="signup_password" class ="password">Password</label>
-                    <input type="password" name="signup_password" id="" class = "pass"><br>
-                    <label for="signup_re_password" class="password">Confirm Password</label>
-                    <input type="password" name="signup_re_password" id="" class = "pass">
-                    <input type="button" value="Sign Up" class="signup">
-            </form>
+        <form action="" method="post">
+            {% csrf_token %}
+            <h1 class = "title_signup">Register</h1>
+            <p class="user">Username</p>
+            {{form.username}}
+            <p class="fname">First Name</p>
+            {{form.fname}}
+            <p class="fname">Last Name</p>
+            {{form.lname}}
+            <p class="password">Password</p>
+            {{form.password}}
+            <p class="password">{{form.confirm_password.label_tag}}</p>
+            {{form.confirm_password}}
+            <button type="submit" class="signup">Signup</button>
+        </form>
     </div>
 {% endblock %}
