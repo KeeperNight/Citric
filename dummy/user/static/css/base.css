@@ -1,0 +1,19 @@
+body{
+    background-color: #000;
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.site-header .navbar-nav .nav-link {
+    color: white;   
+}
+
+.site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+
+}

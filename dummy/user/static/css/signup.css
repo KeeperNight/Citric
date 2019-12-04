@@ -1,0 +1,77 @@
+.col-md-4{
+    position:relative;
+    left:auto;
+    top:7vh;
+}
+.col-md-8 .title_signup{
+    position:relative;
+    width: 165px;
+    height: 45px;
+    top: 10px;
+    left:270px;
+    padding:15px;
+    font-family: Consolas;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 70px;
+    display: flex;
+    border: 2px dotted;
+    border-radius: 8px;
+    border-image-source: linear-gradient(90deg, rgba(141,131,255,1) 0%, rgba(230,208,72,1) 43%, rgba(0,212,255,1) 100%);
+    border-image-slice: 1;
+    color: white;
+    align-items: center;
+    text-align: center;
+  }
+.col-md-8 .fname{
+    position:relative;
+top:50px;
+left:150px;
+font-family: Consolas;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+text-align: center;
+    color:white;
+}
+
+.col-md-8 .fname1{
+    position: relative;
+    top:10px;
+    left:390px;
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 100px rgb(186, 186, 186);
+    color: white;
+}
+.col-md-8 .signup {
+    position:relative;
+    width: 140px;
+    height: 45px;
+    top: 125px;
+    left:130px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+  
+  .col-md-8 .signup:hover {
+    background-image: linear-gradient(to right, #43cea2,#185a9d);
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
